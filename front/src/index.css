@@ -54,7 +54,41 @@ nav .contact-btn{
   font-size: large;
   font-weight: 600;
   font-family: 'Montserrat', 'sans-serif' ;
+  cursor: pointer;
 }
 
+/* Menu deroulants*/
 
+.plomberie-link, .chauffage-link, .clim-link {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-deroulant {
+  position: absolute;
+  top: 100%; /* Positionné directement en dessous du lien */
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  display: none;
+  width: 150px;
+}
+
+.menu-deroulant a{
+  color: #03295c;
+  font-size: small;
+}
+
+/* Afficher le menu déroulant au survol du lien */
+.plomberie-link:hover .menu-deroulant,
+.chauffage-link:hover .menu-deroulant,
+.clim-link:hover .menu-deroulant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
 

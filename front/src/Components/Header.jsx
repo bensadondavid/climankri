@@ -29,9 +29,34 @@ function Header() {
                 <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
                 <nav>
                     <div className="links">
-                        <Link>PLOMBERIE</Link>
-                        <Link>CHAUFFAGE</Link>
-                        <Link>CLIMATISATION</Link>
+                        <div className="plomberie">
+                            <Link className="plomberie-link">PLOMBERIE
+                                <div className="menu-deroulant">
+                                    <Link>SALLE DE BAIN</Link>
+                                    <Link>CHAUFFE-EAU</Link>
+                                    <Link>DEPANNAGE</Link>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="chauffage">
+                            <Link className="chauffage-link">CHAUFFAGE
+                                <div className="menu-deroulant">
+                                    <Link>PAC AIR-EAU</Link>
+                                    <Link>RADIATEURS</Link>
+                                    <Link>CHAUDIERES</Link>
+                                    <Link>DESEMBOUAGE</Link>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="clim">
+                            <Link className="clim-link">CLIMATISATION
+                                <div className="menu-deroulant">
+                                    <Link>PAC AIR-AIR</Link>
+                                    <Link>VRV</Link>
+                                    <Link>GAINABLES</Link>
+                                </div>
+                            </Link>
+                        </div>
                         <button className='contact-btn'>CONTACT</button>
                     </div>
                 </nav>
