@@ -24,6 +24,7 @@ function Header() {
 
     return (
         <>
+        <div className="entete">Au service de votre habitat</div>
         {screenWidth > 1000 ? 
            <header>
                 <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>

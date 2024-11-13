@@ -3,10 +3,19 @@
   padding: 0;
 }
 
-header{
+.entete{
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: large;
+  text-align: center;
+  background-color: #03295c;
+  color: #fff;
+  padding: 5px;
+}
+
+header{ 
   height: 17vh;
   width: 100%;
-  background-color: #03295c;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,9 +25,11 @@ header{
 }
 
 header img{
-  height: 120px;
-  width: 180px;
-  margin: 30px;
+  height: 180px;
+  width: 270px;
+  position: absolute;
+  top: 0;
+  left: -50px;
 }
 
 nav{
@@ -40,23 +51,22 @@ nav{
 
 .links a{
   font-family: 'Montserrat', 'sans-serif' ;
-  font-size: larger;
+  font-size: x-large;
   text-decoration: none;
-  color: white;
+  color: #03295c;
+  font-weight: bold;
 }
 
 nav .contact-btn{
-  color: #03295c;
-  background-color: #fff;
+  color: #fff;
+  background-color: #03295c;
   width: 200px;
   height: 50px;
-  border: none;
   border-radius: 5px;
   font-size: large;
   font-weight: 600;
   font-family: 'Montserrat', 'sans-serif' ;
   cursor: pointer;
-  margin-left: 50px;
 }
 
 /* Menu deroulants*/
@@ -76,13 +86,14 @@ nav .contact-btn{
   border-radius: 4px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   display: none;
-  width: 200px;
+  width: 150px;
 }
 
 .menu-deroulant a{
   color: #03295c;
   font-size: medium;
   margin-left: 10px;
+  font-weight: 600;
 }
 
 /* Afficher le menu déroulant au survol du lien */
