@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
+import ImageSlider from "../Components/Slider";
 
 function Home (){
 
@@ -7,7 +8,7 @@ function Home (){
         <>
             <Header />
             <div className="home">
-                
+                <ImageSlider />
             </div>
         </>
     )
