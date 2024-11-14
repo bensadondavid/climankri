@@ -24,8 +24,9 @@ function Header() {
 
     return (
         <>
-        <div className="entete">Au service de votre habitat</div>
         {screenWidth > 1000 ? 
+        <div className="entete">
+            <p>Au service de votre habitat </p>
            <header>
                 <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
                 <nav>
@@ -62,6 +63,7 @@ function Header() {
                     </div>
                 </nav>
             </header>
+            </div>
         :
         hambtn ?
              <header>
