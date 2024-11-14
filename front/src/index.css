@@ -122,6 +122,7 @@ nav .contact-btn:hover{
 
   header{
     height: 20vh;
+    position: relative;
   }
   header img{
     left: -65px;
