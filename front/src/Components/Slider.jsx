@@ -20,13 +20,15 @@ const ImageSlider = () => {
   ];
 
   return (
-    <Slider {...settings} className="slider">
-      {images.map((url, index) => (
-        <div key={index}>
-          <img src={url} alt={`Slide ${index + 1}`} style={{ width: "100%", height: "70vh" }} />
-        </div>
-      ))}
-    </Slider>
+    <div className="slider-wrapper">
+      <Slider {...settings} className="slider">
+        {images.map((url, index) => (
+          <div key={index} className="slider-container">
+            <img src={url} alt={`Slide ${index + 1}`} className="slider-image" />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
