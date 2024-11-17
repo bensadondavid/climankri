@@ -122,9 +122,11 @@ nav .contact-btn:hover{
 
 @media (max-width : 1000px) {
 
+  .entete{
+    position: relative;
+  }
   header{
     height: 20vh;
-    position: relative;
   }
   header img{
     left: -65px;
