@@ -66,11 +66,16 @@ function Header() {
             </div>
         :
         hambtn ?
-             <header>
+        <div className="entete">
+            <p>Au service de votre habitat </p>
+            <header>
              <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
              <button className="hambtn" onClick={handleClick}>|||</button>
-         </header>
+            </header>
+        </div>
         :
+        <div className="entete">
+            <p>Au service de votre habitat </p>
             <header>
                 <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
                 <button className="hambtn" onClick={handleClick}>|||</button>
@@ -80,6 +85,7 @@ function Header() {
                         <Link>CLIMATISATION</Link>
                 </nav>
             </header>
+        </div>
     }
            
         </>
