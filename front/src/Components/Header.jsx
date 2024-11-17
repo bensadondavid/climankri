@@ -69,8 +69,8 @@ function Header() {
         <div className="entete">
             <p>Au service de votre habitat </p>
             <header>
-             <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
-             <button className="hambtn" onClick={handleClick}>|||</button>
+                <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
+                <button className="hambtn" onClick={handleClick}>|||</button>
             </header>
         </div>
         :

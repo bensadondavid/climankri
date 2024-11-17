@@ -127,21 +127,25 @@ nav .contact-btn:hover{
   }
   header{
     height: 18vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
   header img{
     left: -65px;
   }
   .hambtn{
+    position: absolute;
+    top: 75px;
+    right: 5px;
     transform: rotate(90deg);
     border: none;
     font-size: xx-large;
     padding: 15px;
     margin: 5px;
-    background-color: #fff;
+    background-color: transparent;
     color: #03295c;
+  }
+  nav{
+    position: absolute;
+    top: 95px;
   }
 }
 
@@ -208,4 +212,30 @@ nav .contact-btn:hover{
 
 .home{
   height: 150vh;
+}
+
+/* Qualifications */
+
+.qualifs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qualifs h2{
+  font-family: 'Montserrat', 'sans-serif';
+  padding: 40px;
+}
+
+.img-qualifs{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.img-qualifs img{
+  width: 180px;
+  height: 120px;
 }

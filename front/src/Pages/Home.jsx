@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import ImageSlider from "../Components/Slider";
+import Qualifications from "../Components/Qualifications";
 
 function Home (){
 
@@ -9,6 +10,7 @@ function Home (){
             <Header />
             <div className="home">
                 <ImageSlider />
+                <Qualifications />
             </div>
         </>
     )
