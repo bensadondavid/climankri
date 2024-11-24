@@ -7,11 +7,10 @@ function Menu (){
     return(
         <>
             <div className="menu">
-                <Link to='/'>Plomberie</Link>
-                <Link to='/'>Plomberie</Link>
-                <Link to='/'>Plomberie</Link>
-                <Link to='/'>Plomberie</Link>
-                <Link to='/'>Plomberie</Link>
+                <Link to='/'>PLOMBERIE</Link>
+                <Link to='/'>CHAUFFAGE</Link>
+                <Link to='/'>CLIMATISATION</Link>
+                <Link to='/'>CONTACT</Link>
             </div>        
         </>
     )

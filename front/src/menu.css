@@ -1,7 +1,7 @@
 .menu{
     position: absolute;
     left: 0;
-    height: 50vh;
+    height: fit-content;
     width: 100vw;
     background-color: #fff; 
   }
@@ -10,4 +10,8 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
+    font-family: 'Montserrat', 'sans-serif';
+    text-decoration: none;
+    color: #03295c;
+    font-weight: bold;
   }
