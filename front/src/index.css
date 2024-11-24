@@ -7,7 +7,6 @@
 .entete{
   position: fixed;
   z-index: 100;
-  height: fit-content;
   width: 100%;
 }
 
@@ -27,6 +26,7 @@ header{
   justify-content: space-between;
   align-items: end;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  height: fit-content;
 }
 
 header img{
