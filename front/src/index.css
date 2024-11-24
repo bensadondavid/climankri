@@ -65,15 +65,17 @@ nav{
 }
 
 nav .contact-btn{
-  color: #fff;
+  color: #ffff;
   background-color: #03295c;
   width: 200px;
   height: 50px;
+  padding: 10px;
   border-radius: 5px;
   font-size: large;
   font-weight: 600;
   font-family: 'Montserrat', 'sans-serif' ;
   cursor: pointer;
+  z-index: 100;
 }
 
 nav .contact-btn:hover{
@@ -82,29 +84,37 @@ nav .contact-btn:hover{
 
 /* Menu deroulants*/
 
+.plomberie, .chauffage, .clim{
+  width: 100%;
+}
+
 .plomberie-link, .chauffage-link, .clim-link {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .menu-deroulant {
   position: absolute;
-  top: 100%; /* Positionné directement en dessous du lien */
+  top: 100%; 
   left: 0;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: none;
   display: none;
-  width: 150px;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 15px;
 }
 
 .menu-deroulant a{
   color: #03295c;
   font-size: medium;
-  margin-left: 10px;
   font-weight: 600;
+  padding: 10px 20px;
+}
+
+.menu-deroulant a:hover{
+  background-color: gainsboro;
 }
 
 /* Afficher le menu déroulant au survol du lien */
@@ -142,11 +152,24 @@ nav .contact-btn:hover{
     margin: 5px;
     background-color: transparent;
     color: #03295c;
+    z-index: 1000;
   }
   nav{
     position: absolute;
     top: 95px;
   }
+  .plomberie, .chauffage, .clim{
+    width: a;
+  }
+}
+
+.menu{
+  position: absolute;
+  top: 90px;
+  left: 0;
+  height: 50vh;
+  width: 100vw;
+  background-color: #fff; 
 }
 
 /* Slider */
@@ -237,5 +260,13 @@ nav .contact-btn:hover{
 
 .img-qualifs img{
   width: 180px;
-  height: 120px;
+  height: 120px; 
+}
+
+@media (max-width : 1000px) {
+  .qualifs .img-qualifs{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
 }

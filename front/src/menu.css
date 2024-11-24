@@ -1,0 +1,14 @@
+.menu{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    background-color: #fff; 
+  }
+
+  .menu a{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }

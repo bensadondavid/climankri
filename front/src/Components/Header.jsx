@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom'
+import Menu from "./Menu";
 
 
 function Header() {
@@ -80,9 +81,7 @@ function Header() {
                 <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
                 <button className="hambtn" onClick={handleClick}>|||</button>
                 <nav>
-                        <Link>PLOMBERIE</Link>
-                        <Link>CHAUFFAGE</Link>
-                        <Link>CLIMATISATION</Link>
+                       <Menu />
                 </nav>
             </header>
         </div>
