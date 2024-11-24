@@ -55,7 +55,7 @@ function Menu() {
       </div>
 
       <div className="menu-item">
-        <Link to="/contact" className="menu-link">CONTACT</Link>
+       <Link to="/contact" className="menu-link"> <button className="btn-contact-sous-menu">CONTACT</button></Link>
       </div>
     </div>
   );

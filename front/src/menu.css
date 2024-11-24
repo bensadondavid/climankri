@@ -25,7 +25,7 @@
   .submenu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease; /* Transition fluide */
+    transition: max-height 0.3s ease; 
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -46,4 +46,13 @@
     font-weight: 500;
     font-family: 'Montserrat', 'sans-serif';
   }
+
+  .btn-contact-sous-menu{
+    background-color: #03295c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    width: 150px;
+}
   
