@@ -1,17 +1,49 @@
-.menu{
-    position: absolute;
-    left: 0;
-    height: fit-content;
-    width: 100vw;
-    background-color: #fff; 
-  }
-
-  .menu a{
+/* Conteneur principal du menu */
+.menu {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    font-family: 'Montserrat', 'sans-serif';
-    text-decoration: none;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style des liens principaux */
+  .menu-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
     color: #03295c;
     font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+  
+  /* Sous-menu (fermé par défaut) */
+  .submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Transition fluide */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  
+  /* Sous-menu ouvert */
+  .submenu.active {
+    max-height: 200px; /* Ajustez en fonction du contenu */
+    padding: 10px;
+  }
+  
+  .submenu a {
+    text-decoration: none;
+    color: #03295c;
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Montserrat', 'sans-serif';
+  }
+  
