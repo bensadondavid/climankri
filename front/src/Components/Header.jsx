@@ -80,10 +80,8 @@ function Header() {
             <header>
                 <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
                 <button className="hambtn" onClick={handleClick}>|||</button>
-                <nav>
-                       <Menu />
-                </nav>
             </header>
+            <Menu />
         </div>
     }
            
