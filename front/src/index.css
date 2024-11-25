@@ -27,7 +27,10 @@ header{
   align-items: end;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   height: fit-content;
+<<<<<<< HEAD
   width: 100%;
+=======
+>>>>>>> ef909742ba3aeca417d49e445348fcfdfc0322b3
 }
 
 header img{
