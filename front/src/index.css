@@ -245,11 +245,19 @@ nav .contact-btn:hover{
   line-height: 40px;
 }
 
+.qualifs p{
+  font-family: 'Montserrat', 'sans-serif';
+  width: 80%;
+  line-height: 20px;
+  text-align: justify;
+}
+
 .img-qualifs{
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 50px;
 }
 
 .img-qualifs img{
