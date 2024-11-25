@@ -27,16 +27,12 @@ header{
   align-items: end;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   height: fit-content;
-<<<<<<< HEAD
-  width: 100%;
-=======
->>>>>>> ef909742ba3aeca417d49e445348fcfdfc0322b3
 }
 
 header img{
   height: 110px;
-  width: 150px;
- 
+  width: 160px;
+  margin-bottom: 5px;
 }
 
 /* NavBar */
@@ -159,9 +155,6 @@ nav .contact-btn:hover{
   nav{
     position: absolute;
     top: 95px;
-  }
-  .plomberie, .chauffage, .clim{
-    width: a;
   }
 }
 
