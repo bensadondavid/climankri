@@ -5,7 +5,7 @@ function Qualifications (){
     return(
         <>
         <div className="qualifs">
-            <h2><span style={{color: '#03295c'}}>CLIMANKRI </span> : UNE ENTREPRISE QUALIFIEE</h2>
+            <h2><span style={{color: '#03295c'}}>CLIMANKRI : </span> <br /> UNE ENTREPRISE QUALIFIEE</h2>
             <div className="img-qualifs">
                 <img src="qualipac.png" alt="qualipac" />
                 <img src="qualipv.png" alt="qualipv" />
