@@ -293,3 +293,68 @@ nav .contact-btn:hover{
     text-align: justify;
   }
 }
+
+/* Vignettes */
+
+.vignette{
+  margin-top: 10vh;
+  margin: 10vh auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.plomberie-vignette, .chauffage-vignette,
+.clim-vignette{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Montserrat', 'sans-serif';
+  gap: 40px;
+  border-radius: 10px;
+}
+
+.plomberie-vignette img, .chauffage-vignette img,
+.clim-vignette img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0;
+}
+
+.plomberie-vignette p, .chauffage-vignette p,
+.clim-vignette p{
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.chauffage-vignette {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text img";
+  font-family: 'Montserrat', 'sans-serif';
+  gap: 40px;
+  border-radius: 10px;
+}
+
+.chauffage-vignette img {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+.chauffage-vignette p {
+  grid-area: text;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
