@@ -11,13 +11,12 @@ function Vignette() {
 
       const position = ref.current.getBoundingClientRect();
 
-      // Vérifie si l'élément est visible et si l'animation n'a pas déjà été appliquée
       if (
         position.top <= window.innerHeight &&
         position.bottom >= 0 &&
         !ref.current.classList.contains(css)
       ) {
-        ref.current.classList.add(css); // Ajoute l'animation
+        ref.current.classList.add(css); 
       }
     };
 
@@ -27,13 +26,10 @@ function Vignette() {
       handleScroll(climRef, "slide-anim-right-nd");
     };
 
-    // Ajout de l'écouteur au scroll
     window.addEventListener("scroll", onScroll);
 
-    // Vérifie immédiatement si des éléments sont visibles sans attendre un scroll
     onScroll();
 
-    // Nettoyage lors du démontage
     return () => {
       window.removeEventListener("scroll", onScroll);
     };

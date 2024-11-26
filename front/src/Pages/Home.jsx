@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import ImageSlider from "../Components/Slider";
 import Qualifications from "../Components/Qualifications";
 import Vignette from "../Components/Vignette";
+import Contact from "../Components/Contact";
 
 function Home (){
 
@@ -14,6 +15,7 @@ function Home (){
                 <Qualifications />
                 <hr style={{width: '60%', margin: '5vh auto'}}/>
                 <Vignette />
+                <Contact />
             </div>
         </>
     )
