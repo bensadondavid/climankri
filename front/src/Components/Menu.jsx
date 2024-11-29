@@ -17,7 +17,7 @@ function Menu() {
           className="menu-link"
           onClick={() => toggleMenu("plomberie")}
         >
-          PLOMBERIE ▼
+          PLOMBERIE 
         </button>
         <div className={`submenu ${activeMenu === "plomberie" ? "active" : ""}`}>
           <Link to="/">Salle de Bain</Link>
@@ -31,7 +31,7 @@ function Menu() {
           className="menu-link"
           onClick={() => toggleMenu("chauffage")}
         >
-          CHAUFFAGE ▼
+          CHAUFFAGE 
         </button>
         <div className={`submenu ${activeMenu === "chauffage" ? "active" : ""}`}>
           <Link to="/">PAC Air-Eau</Link>
@@ -45,7 +45,7 @@ function Menu() {
           className="menu-link"
           onClick={() => toggleMenu("climatisation")}
         >
-          CLIMATISATION ▼
+          CLIMATISATION 
         </button>
         <div className={`submenu ${activeMenu === "climatisation" ? "active" : ""}`}>
           <Link to="/">PAC Air-Air</Link>
