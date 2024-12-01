@@ -4,6 +4,7 @@ import ImageSlider from "../Components/Slider";
 import Qualifications from "../Components/Qualifications";
 import Vignette from "../Components/Vignette";
 import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
 
 function Home (){
 
@@ -16,6 +17,7 @@ function Home (){
                 <hr style={{width: '60%', margin: '5vh auto'}}/>
                 <Vignette />
                 <Contact />
+                <Footer />
             </div>
         </>
     )

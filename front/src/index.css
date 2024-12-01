@@ -485,3 +485,22 @@ form h2{
     padding: 10px;
     }
 }
+
+/* Footer */
+
+footer{
+  height: 30vh;
+  width: 100%;
+  background-color: #03295c;
+  color: #fff;
+}
+
+.first-container-footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logo-avlone{
+  width: 120px;
+  height: 80px;
+}
