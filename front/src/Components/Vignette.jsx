@@ -53,7 +53,6 @@ function Vignette() {
       </div>
 
       <div className="chauffage-vignette" ref={chauffageRef}>
-        <img src="/img-chauffage.jpg" alt="img-chauffage" />
         <p>
           <span style={{ fontWeight: "bold", color: "#03295c" }}>
             CHAUFFAGE
@@ -66,6 +65,7 @@ function Vignette() {
           vos équipements. Optez pour des solutions performantes et économes en
           énergie.
         </p>
+        <img src="/img-chauffage.jpg" alt="img-chauffage" />
       </div>
 
       <div className="clim-vignette" ref={climRef}>

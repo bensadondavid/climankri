@@ -218,7 +218,6 @@ nav .contact-btn:hover{
 
 .slider-content button:hover{
   filter: brightness(0.8);
-  transform: scale(1.1);
 }
 
 .slider-content p{
@@ -306,8 +305,7 @@ nav .contact-btn:hover{
   gap: 80px;
 }
 
-.plomberie-vignette, .chauffage-vignette,
-.clim-vignette{
+.plomberie-vignette, .clim-vignette{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -335,7 +333,6 @@ nav .contact-btn:hover{
 .chauffage-vignette {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "text img";
   font-family: 'Montserrat', 'sans-serif';
   gap: 10px;
   animation: slide 1s ease;
@@ -347,7 +344,6 @@ nav .contact-btn:hover{
 }
 
 .chauffage-vignette p {
-  grid-area: text;
   font-size: larger;
   display: flex;
   flex-direction: column;
@@ -392,4 +388,73 @@ nav .contact-btn:hover{
   display: flex;
   flex-direction: column;
 }
+.chauffage-vignette{
+  flex-direction: column-reverse;
+}
+}
+
+
+/* Contact */
+
+form{
+  width: 50%;
+  background-color:rgb(226, 231, 240);
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px;
+}
+
+.first-part-form{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.first-part-form input{
+  width: 100%;
+  padding: 10px;
+  font-size: medium;
+  border: none;
+}
+
+.scnd-part-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.scnd-part-form textarea{
+  width: 100%;
+  height: 120px;
+  padding: 10px 0;
+  font-size: medium;
+  border: none;
+}
+
+.scnd-part-form button{
+  padding: 15px;
+  width: 170px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #03295c;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.scnd-part-form button:hover{
+  color:#03295c;
+  background-color: #fff;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
