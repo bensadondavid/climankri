@@ -45,6 +45,8 @@ function Contact(){
         <>
             <form method="POST" onSubmit={handleSubmit}>
 
+                <h2>Contactez-Nous</h2>
+
                 <div className="first-part-form">
                     <input type="text" placeholder="Prénom" name="prenom" required value={formData.prenom} onChange={handleChange} />
                     <input type="text" placeholder="Nom" name="nom" required value={formData.nom} onChange={handleChange} />

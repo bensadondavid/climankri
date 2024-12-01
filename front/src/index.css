@@ -407,6 +407,11 @@ form{
   align-items: center;
   gap: 30px;
   border-radius: 10px;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+form h2{
+  color: #03295c;
 }
 
 .first-part-form{
@@ -453,8 +458,30 @@ form{
   font-size: medium;
 }
 
+.first-part-form input, .scnd-part-form textarea::placeholder{
+  font-family: 'Montserrat', 'sans-serif';
+}
+
 .scnd-part-form button:hover{
   color:#03295c;
   background-color: #fff;
   transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+/* Contact mobile */
+
+@media (max-width : 1000px) {
+  form{
+    width: 80%;
+    padding: 30px;
+  }
+  .first-part-form{
+    flex-direction: column;
+  }
+  .first-part-form input, .scnd-part-form textarea {
+    border-radius: 4px;
+  }
+  .scnd-part-form textarea{
+    padding: 10px;
+    }
 }
