@@ -1,9 +1,23 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
 
 function Map({ latitude = 48.9785, longitude = 2.3332 }) {
   const width = "33vh"; 
   const height = "25vh";
+
+  const customIcon = new L.Icon({
+    iconUrl: markerIcon,
+    shadowUrl: markerShadow,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  });
+
 
   return (
     <>
@@ -19,7 +33,7 @@ function Map({ latitude = 48.9785, longitude = 2.3332 }) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"
         />
-        <Marker position={[latitude, longitude]}>
+        <Marker position={[latitude, longitude]} icon={customIcon}>
           <Popup>CLIMANKRI</Popup>
         </Marker>
       </MapContainer>
