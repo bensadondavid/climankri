@@ -105,7 +105,7 @@ nav .contact-btn:hover{
   background-color: #fff;
   border: none;
   display: none;
-  width: 100%;
+  max-width: max-content;
   flex-direction: column;
   padding-top: 15px;
 }
