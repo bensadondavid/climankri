@@ -19,9 +19,9 @@ function Menu() {
           PLOMBERIE
         </button>
         <div className={`submenu ${activeMenu === "plomberie" ? "active" : ""}`}>
-          <Link to="/">Salle de Bain</Link>
-          <Link to="/">Chauffe-Eau</Link>
-          <Link to="/">Dépannage</Link>
+          <Link>RÉNOVATION & POSE</Link>
+          <Link>DÉPANNAGE RAPIDE</Link>
+          <Link>SERVICE D'URGENCE</Link>
         </div>
       </div>
 
@@ -33,9 +33,10 @@ function Menu() {
           CHAUFFAGE
         </button>
         <div className={`submenu ${activeMenu === "chauffage" ? "active" : ""}`}>
-          <Link to="/">PAC Air-Eau</Link>
-          <Link to="/">Radiateurs</Link>
-          <Link to="/">Chaudières</Link>
+          <Link>INSTALLATION MODERNE</Link>
+          <Link>MAINTENANCE ANNUELLE</Link>
+          <Link>ASSISTANCE & RÉPARATION</Link>
+          <Link>AIDE D'URGENCE</Link>
         </div>
       </div>
 
@@ -47,9 +48,9 @@ function Menu() {
           CLIMATISATION
         </button>
         <div className={`submenu ${activeMenu === "climatisation" ? "active" : ""}`}>
-          <Link to="/">PAC Air-Air</Link>
-          <Link to="/">VRV</Link>
-          <Link to="/">Gainables</Link>
+          <Link>SYSTÈMES SUR MESURE</Link>
+          <Link>NETTOYAGE & CONTRÔLE</Link>
+          <Link>DIAGNOSTIC & RÉPARATION</Link>
         </div>
       </div>
 

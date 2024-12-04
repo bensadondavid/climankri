@@ -31,35 +31,35 @@ function Header() {
            <header>
                 <Link to='/'><img src="logoAvlone.png" alt="logo" /></Link>
                 <nav>
-                    <div className="links">
-                        <div className="plomberie">
-                            <Link className="plomberie-link">PLOMBERIE
-                                <div className="menu-deroulant">
-                                    <Link>SALLE DE BAIN</Link>
-                                    <Link>CHAUFFE-EAU</Link>
-                                    <Link>DEPANNAGE</Link>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="chauffage">
-                            <Link className="chauffage-link">CHAUFFAGE
-                                <div className="menu-deroulant">
-                                    <Link>PAC AIR-EAU</Link>
-                                    <Link>RADIATEURS</Link>
-                                    <Link>CHAUDIERES</Link>
-                                    <Link>DESEMBOUAGE</Link>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="clim">
-                            <Link className="clim-link">CLIMATISATION
-                                <div className="menu-deroulant">
-                                    <Link>PAC AIR-AIR</Link>
-                                    <Link>VRV</Link>
-                                    <Link>GAINABLES</Link>
-                                </div>
-                            </Link>
-                        </div>
+                <div className="links">
+                    <div className="plomberie">
+                        <Link className="plomberie-link">PLOMBERIE
+                            <div className="menu-deroulant">
+                                <Link>RÉNOVATION & POSE</Link>
+                                <Link>DÉPANNAGE RAPIDE</Link>
+                                <Link>SERVICE D'URGENCE</Link>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="chauffage">
+                        <Link className="chauffage-link">CHAUFFAGE
+                            <div className="menu-deroulant">
+                                <Link>INSTALLATION MODERNE</Link>
+                                <Link>MAINTENANCE ANNUELLE</Link>
+                                <Link>ASSISTANCE & RÉPARATION</Link>
+                                <Link>AIDE D'URGENCE</Link>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="clim">
+                        <Link className="clim-link">CLIMATISATION
+                            <div className="menu-deroulant">
+                                <Link>SYSTÈMES SUR MESURE</Link>
+                                <Link>NETTOYAGE & CONTRÔLE</Link>
+                                <Link>DIAGNOSTIC & RÉPARATION</Link>
+                            </div>
+                        </Link>
+                    </div>
                         <Link className="sav">SAV</Link>
                         <button className='contact-btn'>CONTACT</button>
                     </div>
