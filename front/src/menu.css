@@ -57,9 +57,15 @@
 }
 
 .menu-item .sav-mobile{
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  color: #03295c;
+  font-weight: bold;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
-    color: #03295c;
-    font-size: large;
-    font-weight: bold;
-    font-family: 'Montserrat', 'sans-serif';
 }
