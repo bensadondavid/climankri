@@ -86,7 +86,7 @@ nav .contact-btn:hover{
   width: 100%;
 }
 
-.plomberie-link, .chauffage-link, .clim-link {
+.plomberie-link, .chauffage-link, .clim-link, .sav-link {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -113,6 +113,10 @@ nav .contact-btn:hover{
 
 .menu-deroulant a:hover{
   background-color: gainsboro;
+}
+
+.sav{
+  margin-left: 25px;
 }
 
 /* Afficher le menu déroulant au survol du lien */

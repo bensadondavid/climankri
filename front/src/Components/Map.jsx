@@ -7,7 +7,7 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
 function Map({ latitude = 48.9785, longitude = 2.3332 }) {
   const width = "33vh"; 
-  const height = "25vh";
+  const height = "15vh";
 
   const customIcon = new L.Icon({
     iconUrl: markerIcon,
@@ -27,7 +27,7 @@ function Map({ latitude = 48.9785, longitude = 2.3332 }) {
         style={{ height, width }}
         dragging={true}
         doubleClickZoom={true}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -11,13 +11,12 @@ function Menu() {
 
   return (
     <div className="menu">
-
       <div className="menu-item">
         <button
           className="menu-link"
           onClick={() => toggleMenu("plomberie")}
         >
-          PLOMBERIE 
+          PLOMBERIE
         </button>
         <div className={`submenu ${activeMenu === "plomberie" ? "active" : ""}`}>
           <Link to="/">Salle de Bain</Link>
@@ -31,7 +30,7 @@ function Menu() {
           className="menu-link"
           onClick={() => toggleMenu("chauffage")}
         >
-          CHAUFFAGE 
+          CHAUFFAGE
         </button>
         <div className={`submenu ${activeMenu === "chauffage" ? "active" : ""}`}>
           <Link to="/">PAC Air-Eau</Link>
@@ -45,7 +44,7 @@ function Menu() {
           className="menu-link"
           onClick={() => toggleMenu("climatisation")}
         >
-          CLIMATISATION 
+          CLIMATISATION
         </button>
         <div className={`submenu ${activeMenu === "climatisation" ? "active" : ""}`}>
           <Link to="/">PAC Air-Air</Link>
@@ -54,8 +53,15 @@ function Menu() {
         </div>
       </div>
 
+       {/* Lien SAV pour mobile */}
+       <div className="menu-item sav-mobile-wrapper">
+        <Link to="/sav" className="sav-mobile">SAV</Link>
+      </div>
+
       <div className="menu-item">
-       <Link to="/contact" className="menu-link"> <button className="btn-contact-sous-menu">CONTACT</button></Link>
+        <Link to="/contact" className="menu-link">
+          <button className="btn-contact-sous-menu">CONTACT</button>
+        </Link>
       </div>
     </div>
   );
