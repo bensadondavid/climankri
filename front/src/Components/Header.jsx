@@ -33,16 +33,16 @@ function Header() {
                 <nav>
                 <div className="links">
                     <div className="plomberie">
-                        <Link className="plomberie-link">PLOMBERIE
+                        <Link to='/plomberie' className="plomberie-link">PLOMBERIE
                             <div className="menu-deroulant">
-                                <Link>RÉNOVATION & POSE</Link>
+                                <Link to='/plomberie#renovation'>RÉNOVATION & POSE</Link>
                                 <Link>DÉPANNAGE RAPIDE</Link>
                                 <Link>SERVICE D'URGENCE</Link>
                             </div>
                         </Link>
                     </div>
                     <div className="chauffage">
-                        <Link className="chauffage-link">CHAUFFAGE
+                        <Link to='/chauffage' className="chauffage-link">CHAUFFAGE
                             <div className="menu-deroulant">
                                 <Link>INSTALLATION MODERNE</Link>
                                 <Link>MAINTENANCE ANNUELLE</Link>
@@ -52,7 +52,7 @@ function Header() {
                         </Link>
                     </div>
                     <div className="clim">
-                        <Link className="clim-link">CLIMATISATION
+                        <Link to='/climatisation' className="clim-link">CLIMATISATION
                             <div className="menu-deroulant">
                                 <Link>SYSTÈMES SUR MESURE</Link>
                                 <Link>NETTOYAGE & CONTRÔLE</Link>
@@ -60,7 +60,7 @@ function Header() {
                             </div>
                         </Link>
                     </div>
-                        <Link className="sav">SAV</Link>
+                        <Link to='/sav' className="sav">SAV</Link>
                         <button className='contact-btn'>CONTACT</button>
                     </div>
                 </nav>
