@@ -36,27 +36,27 @@ function Header() {
                         <Link to='/plomberie' className="plomberie-link">PLOMBERIE
                             <div className="menu-deroulant">
                                 <Link to='/plomberie#renovation'>RÉNOVATION & POSE</Link>
-                                <Link>DÉPANNAGE RAPIDE</Link>
-                                <Link>SERVICE D'URGENCE</Link>
+                                <Link to='/plomberie#depanage'>DÉPANNAGE RAPIDE</Link>
+                                <Link to='/plomberie#urgence'>SERVICE D'URGENCE</Link>
                             </div>
                         </Link>
                     </div>
                     <div className="chauffage">
                         <Link to='/chauffage' className="chauffage-link">CHAUFFAGE
                             <div className="menu-deroulant">
-                                <Link>INSTALLATION MODERNE</Link>
-                                <Link>MAINTENANCE ANNUELLE</Link>
-                                <Link>ASSISTANCE & RÉPARATION</Link>
-                                <Link>AIDE D'URGENCE</Link>
+                                <Link to='/chauffage#installation'>INSTALLATION MODERNE</Link>
+                                <Link to='/chauffage#maintenance'>MAINTENANCE ANNUELLE</Link>
+                                <Link to='/chauffage#assistance'>ASSISTANCE & RÉPARATION</Link>
+                                <Link  to='/chauffage#urgence'>AIDE D'URGENCE</Link>
                             </div>
                         </Link>
                     </div>
                     <div className="clim">
                         <Link to='/climatisation' className="clim-link">CLIMATISATION
                             <div className="menu-deroulant">
-                                <Link>SYSTÈMES SUR MESURE</Link>
-                                <Link>NETTOYAGE & CONTRÔLE</Link>
-                                <Link>DIAGNOSTIC & RÉPARATION</Link>
+                                <Link to='/climatisation#systemes'>SYSTÈMES SUR MESURE</Link>
+                                <Link to='/climatisation#nettoyage'>NETTOYAGE & CONTRÔLE</Link>
+                                <Link to='/climatisation#diagnostic'>DIAGNOSTIC & RÉPARATION</Link>
                             </div>
                         </Link>
                     </div>

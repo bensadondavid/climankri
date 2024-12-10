@@ -34,7 +34,7 @@ function Map({ latitude = 48.9785, longitude = 2.3332 }) {
           attribution="&copy; OpenStreetMap contributors"
         />
         <Marker position={[latitude, longitude]} icon={customIcon}>
-          <Popup>CLIMANKRI</Popup>
+          <Popup>8 Rue René Dubos, Groslay</Popup>
         </Marker>
       </MapContainer>
     </>
