@@ -43,7 +43,7 @@ function Contact(){
 
     return(
         <>
-            <form method="POST" onSubmit={handleSubmit}>
+            <form method="POST" onSubmit={handleSubmit} id="contact">
 
                 <h2>Contactez-Nous</h2>
 

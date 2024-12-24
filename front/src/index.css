@@ -633,3 +633,20 @@ footer{
     gap: 40px;
   }
 }
+
+.plomberie-page button,
+.chauffage-page button, .clim-page button,
+.sav-page button{
+  padding: 20px;
+  background-color: #03295c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.plomberie-page button:hover,
+.chauffage-page button:hover, .clim-page button:hover,
+.sav-page button:hover{
+  opacity: 80%;
+}

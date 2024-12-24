@@ -37,6 +37,11 @@ function Header() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
+    const handleScrollToContact = () => {
+        const contact = document.getElementById('contact')
+        contact.scrollIntoView({behavior : 'smooth'})
+    };
+
     return (
         <>
             {screenWidth > 1000 ? 
@@ -75,7 +80,7 @@ function Header() {
                                 </Link>
                             </div>
                             <Link to='/sav' className="sav" onClick={handleScrollToTop}>SAV</Link>
-                            <button className='contact-btn'>CONTACT</button>
+                            <button className='contact-btn' onClick={handleScrollToContact}>CONTACT</button>
                         </div>
                     </nav>
                 </header>
