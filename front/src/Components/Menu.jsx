@@ -19,9 +19,9 @@ function Menu() {
           PLOMBERIE
         </button>
         <div className={`submenu ${activeMenu === "plomberie" ? "active" : ""}`}>
-          <Link>RÉNOVATION & POSE</Link>
-          <Link>DÉPANNAGE RAPIDE</Link>
-          <Link>SERVICE D'URGENCE</Link>
+          <Link to="/plomberie#renovation">RÉNOVATION & POSE</Link>
+          <Link to="/plomberie#depannage">DÉPANNAGE RAPIDE</Link>
+          <Link to="/plomberie#urgence">SERVICE D'URGENCE</Link>
         </div>
       </div>
 
@@ -33,10 +33,10 @@ function Menu() {
           CHAUFFAGE
         </button>
         <div className={`submenu ${activeMenu === "chauffage" ? "active" : ""}`}>
-          <Link>INSTALLATION MODERNE</Link>
-          <Link>MAINTENANCE ANNUELLE</Link>
-          <Link>ASSISTANCE & RÉPARATION</Link>
-          <Link>AIDE D'URGENCE</Link>
+          <Link to="/chauffage#installation">INSTALLATION MODERNE</Link>
+          <Link to="/chauffage#maintenance">MAINTENANCE ANNUELLE</Link>
+          <Link to="/chauffage#assistance">ASSISTANCE & RÉPARATION</Link>
+          <Link to="/chauffage#urgence">AIDE D'URGENCE</Link>
         </div>
       </div>
 
@@ -48,14 +48,14 @@ function Menu() {
           CLIMATISATION
         </button>
         <div className={`submenu ${activeMenu === "climatisation" ? "active" : ""}`}>
-          <Link>SYSTÈMES SUR MESURE</Link>
-          <Link>NETTOYAGE & CONTRÔLE</Link>
-          <Link>DIAGNOSTIC & RÉPARATION</Link>
+          <Link to="/climatisation#systemes">SYSTÈMES SUR MESURE</Link>
+          <Link to="/climatisation#nettoyage">NETTOYAGE & CONTRÔLE</Link>
+          <Link to="/climatisation#diagnostic">DIAGNOSTIC & RÉPARATION</Link>
         </div>
       </div>
 
-       {/* Lien SAV pour mobile */}
-       <div className="menu-item sav-mobile-wrapper">
+      {/* Lien SAV pour mobile */}
+      <div className="menu-item sav-mobile-wrapper">
         <Link to="/sav" className="sav-mobile">SAV</Link>
       </div>
 

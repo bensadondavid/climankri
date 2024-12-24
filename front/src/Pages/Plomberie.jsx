@@ -1,13 +1,13 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import '../plomberie.css';
+import Contact from '../Components/Contact'
 
 function Plomberie() {
   return (
     <>
-
+      <Header />
       <div className="plomberie-page">
-
         {/* Section Rénovation */}
         <section id="renovation">
           <h2>Votre expert en plomberie</h2>
@@ -62,6 +62,7 @@ function Plomberie() {
         </section>
 
       </div>
+      <Contact />
       <Footer />
     </>
   );

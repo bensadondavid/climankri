@@ -1,11 +1,12 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import '../sav.css';
+import Contact from '../Components/Contact'
 
 function Sav() {
   return (
     <>
-
+      <Header />
       <div className="sav-page">
 
         {/* Section Service Après-Vente */}
@@ -38,7 +39,7 @@ function Sav() {
             <li>Remplacement de pièces défectueuses (pompes, résistances, thermostats, etc.).</li>
             <li>Installation de nouveaux équipements performants et économes en énergie.</li>
           </ul>
-          <img src="/img-sav-reparation-global.jpg" alt="Réparation d'équipements" />
+          <img src="/img-sav-reparation.jpg" alt="Réparation d'équipements" />
         </section>
 
         {/* Section Garantie et Assistance */}
@@ -54,13 +55,12 @@ function Sav() {
             <li>Interventions prioritaires pour les produits sous garantie.</li>
             <li>Assistance rapide pour résoudre vos problèmes ou répondre à vos questions.</li>
           </ul>
-          <img src="/img-sav-garantie-global.jpg" alt="Garantie et assistance CLIMANKRI" />
+          <img src="/img-sav-garantie.png" alt="Garantie et assistance CLIMANKRI" />
           <button>Appelez le SAV</button>
         </section>
 
-       
-
       </div>
+      <Contact />
       <Footer />
     </>
   );

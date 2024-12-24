@@ -1,0 +1,66 @@
+/* Styles généraux */
+.climatisation-page{
+    font-family: 'Montserrat', sans-serif;
+    color: #03295c;
+    background-color: #f4f7fa;
+    padding: 20vh 0 5vh 0;
+  }
+  
+  /* Section Styling */
+  #systemes, #nettoyage, #diagnostic {
+    margin: 50px auto;
+    padding: 30px 20px;
+    max-width: 80vw;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Titres des sections */
+  section h2 {
+    font-size: 28px;
+    color: #03295c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #03295c;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  /* Section Paragraphs */
+  section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: justify;
+  }
+  
+  /* Section Lists */
+  section ul {
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  section ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+    list-style: disc;
+    color: #555;
+  }
+  
+  /* Images */
+  section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+

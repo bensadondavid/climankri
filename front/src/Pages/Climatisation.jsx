@@ -1,9 +1,12 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import '../clim.css'
+import Contact from '../Components/Contact'
 
 function Climatisation() {
   return (
     <>
+      <Header />
       <div className="climatisation-page">
 
         {/* Section Systèmes sur Mesure */}
@@ -19,7 +22,7 @@ function Climatisation() {
             <li>Systèmes gainables pour une intégration discrète.</li>
             <li>Climatisation réversible pour un confort été comme hiver.</li>
           </ul>
-          <img src="/img-clim-systemes.webp" alt="Systèmes sur mesure climatisation" />
+          <img src="/img-clim-systeme.jpg" alt="Systèmes sur mesure climatisation" />
           <button>Demandez un devis</button>
         </section>
 
@@ -36,7 +39,7 @@ function Climatisation() {
             <li>Vérification des circuits de fluide frigorigène et tests d'étancheité sur réseaux.</li>
             <li>Test des performances et optimisation des réglages.</li>
           </ul>
-          <img src="/img-clim-nettoyage.jpg" alt="Nettoyage climatisation" />
+          <img src="/img-clim-nettoyage.webp" alt="Nettoyage climatisation" />
         </section>
 
         {/* Section Diagnostic & Réparation */}
@@ -57,6 +60,7 @@ function Climatisation() {
         </section>
 
       </div>
+      <Contact />
       <Footer />
     </>
   );

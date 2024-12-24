@@ -1,10 +1,12 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import '../chauffage.css';
+import Contact from '../Components/Contact'
 
 function Chauffage() {
   return (
     <>
+      <Header />
       <div className="chauffage-page">
 
         {/* Section Installation Moderne */}
@@ -21,7 +23,7 @@ function Chauffage() {
             <li>Mise en place de planchers chauffants pour un confort optimal.</li>
             <li>Installation de PAC Air-Air et PAC Air-Eau pour une efficacité énergétique maximale.</li>
           </ul>
-          <img src="/img-chauffage-installation.webp" alt="Installation de chauffage" />
+          <img src="/img-chauffage-installation.jpg" alt="Installation de chauffage" />
           <button>Demandez un devis</button>
         </section>
 
@@ -70,11 +72,11 @@ function Chauffage() {
             <li>Diagnostic immédiat et réparation sur place.</li>
             <li>Service disponible même les week-ends et jours fériés.</li>
           </ul>
-          <img src="/img-chauffage-urgence.webp" alt="Service d'urgence chauffage" />
+          <img src="/img-chauffage-urgence.jpg" alt="Service d'urgence chauffage" />
           <button className="btn-urgence">Appelez-nous maintenant</button>
         </section>
-
       </div>
+      <Contact />
       <Footer />
     </>
   );
