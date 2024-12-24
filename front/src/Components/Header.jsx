@@ -7,6 +7,10 @@ function Header() {
     const [hambtn, setHambtn] = useState(true);
     const location = useLocation();
 
+    const closeMenu = ()=>{
+        setHambtn(true)
+    }
+
     useEffect(() => {
         const resizeScreen = () => {
             setScreenWidth(window.innerWidth);
@@ -101,7 +105,7 @@ function Header() {
                     <Link to='/' onClick={() => { handleScrollToTop(); handleClick(); }}><img src="logoAvlone.png" alt="logo" /></Link>
                     <button className="hambtn" onClick={handleClick}>|||</button>
                 </header>
-                <Menu />
+                <Menu closeMenu={closeMenu}/>
             </div>
         }
         </>

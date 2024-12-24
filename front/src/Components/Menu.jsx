@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "/src/menu.css";
 
-function Menu() {
+function Menu({closeMenu}) {
   const [activeMenu, setActiveMenu] = useState(null);
 
   const toggleMenu = (menu) => {
     setActiveMenu(activeMenu === menu ? null : menu);
   };
+
+  const handleScrollToContact = () => {
+    const contact = document.getElementById('contact')
+    contact.scrollIntoView({behavior : 'smooth'})
+    closeMenu()
+};
 
   return (
     <div className="menu">
@@ -60,9 +66,7 @@ function Menu() {
       </div>
 
       <div className="menu-item">
-        <Link to="/contact" className="menu-link">
-          <button className="btn-contact-sous-menu">CONTACT</button>
-        </Link>
+          <button className="btn-contact-sous-menu" onClick={handleScrollToContact}>CONTACT</button>
       </div>
     </div>
   );
