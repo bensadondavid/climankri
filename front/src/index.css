@@ -361,6 +361,7 @@ nav .contact-btn:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
   padding: 30px;
 }
 
