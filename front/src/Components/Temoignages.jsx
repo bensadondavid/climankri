@@ -4,36 +4,37 @@ const Temoignages = () => {
 
   const testimonies = [
     {
-      name: "Ruthy Illouz",
+      name: "Claire Morel",
       location: "Paris",
-      text: "Je recommande de se faire accompagner pour votre alya par MayHelp. J’ai été impressionné par le sérieux et l’investissement ! J’ai été aidé pour toutes mes démarches, que ce soit pour trouver mon école ou pour mes rendez-vous (ma teoudat zehout, l’ouverture de mon compte bancaire…). Un immense merci, grâce à vous, mon alya s’est faite de façon beaucoup plus sereine et organisée !!"
+      text: "Climankri a installé une pompe à chaleur dans notre appartement parisien, et le résultat est impeccable ! L'équipe est professionnelle, rapide et très attentionnée. Nous sommes ravis du confort obtenu et des économies réalisées. Je recommande vivement !"
     },
     {
-      name: "Yossef Nabet",
-      location: "Jerusalem",
-      text: "Yehouda est hyper efficace. Il comprend vite le problème et le traite jusqu’au bout. Il est juste parfait pour parler aux interlocuteurs israéliens. Il ne lâche rien et obtient ce qu’il veut ! Il a un très grand sens du devoir et du service."
+      name: "Antoine Dupuis",
+      location: "Lyon",
+      text: "Un immense merci à Climankri pour l'installation de notre climatisation. Ils ont respecté les délais, étaient super disponibles et ont répondu à toutes nos questions. Notre maison à Lyon est maintenant parfaitement climatisée, même en plein été !"
     },
     {
-      name: "Hai Moshé A.",
-      location: "USA",
-      text: "MayHelp a été d’une aide précieuse pour mon inscription à l’université. Étant à l’étranger, ils ont pris en charge toutes les démarches nécessaires, rendant le processus simple et fluide. Leur professionnalisme et leur capacité d’écoute m’ont particulièrement impressionné. Je recommande vivement leurs services. Merci beaucoup à toute l’équipe ! ",
+      name: "Sophie Laurent",
+      location: "Marseille",
+      text: "Je suis extrêmement satisfaite du service de Climankri. Ils ont rénové notre système de chauffage central à Marseille, et tout fonctionne à merveille. Le professionnalisme de l'équipe est remarquable. Bravo !"
     },
     {
-      name: "Alex H.",
-      location: "Jerusalem",
-      text: "Merci à MayHelp qui nous a permis de passer ce cap en toute efficacité  Entre les relevés des compteurs , suivi des dossiers gaz, eau, éléctricté, nos demarches en ont été grandement facilitées."
+      name: "Jean Dufour",
+      location: "Bordeaux",
+      text: "Climankri a pris en charge toutes les réparations de plomberie pour notre maison. Entre les fuites réparées et le suivi constant, nous sommes vraiment tranquilles. Ils sont très réactifs et fiables. Merci beaucoup !"
     },
     {
-      name: "Brigitte Mekies",
-      location: "Jerusalem",
-      text: "Un grand merci pour votre dévouement, votre disponibilité et votre efficacité. Je suis enthousiaste à l’idée de poursuivre notre collaboration avec la même fluidité et simplicité.",
+      name: "Marie Fontaine",
+      location: "Nantes",
+      text: "Un grand merci à Climankri pour leur aide avec notre chaudière en plein hiver. À Nantes, nous avons eu un problème urgent, et leur équipe est intervenue rapidement avec une solution efficace. Excellent service !"
     },
     {
-      name: "Haya Chelli",
-      location: "Jerusalem",
-      text: "J'ai fait appel à Yehouda pour un problème avec le bitouah leoumi et il a été très efficace. Il est très réactif et va au bout des choses. Je recommande fortement.",
+      name: "Pauline Lemoine",
+      location: "Toulouse",
+      text: "Je recommande Climankri sans hésitation ! Ils nous ont guidés pour choisir une pompe à chaleur adaptée à notre maison à Toulouse, et l'installation a été parfaite. Un service client exceptionnel."
     }
-  ];
+];
+
 
   const [index, setIndex] = useState(0);
 
@@ -60,11 +61,11 @@ const Temoignages = () => {
     <div className="testimonies-container">
       <div className="testimonies-elements" key={index}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 24" width="120" height="24">
-          <path fill="#003366" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-          <path fill="#003366" d="M36 17.27L42.18 21l-1.64-7.03L46 9.24l-7.19-.61L36 2l-2.81 6.63L26 9.24l5.46 4.73L29.82 21z"/>
-          <path fill="#003366" d="M60 17.27L66.18 21l-1.64-7.03L70 9.24l-7.19-.61L60 2l-2.81 6.63L50 9.24l5.46 4.73L53.82 21z"/>
-          <path fill="#003366" d="M84 17.27L90.18 21l-1.64-7.03L94 9.24l-7.19-.61L84 2l-2.81 6.63L74 9.24l5.46 4.73L77.82 21z"/>
-          <path fill="#003366" d="M108 17.27L114.18 21l-1.64-7.03L118 9.24l-7.19-.61L108 2l-2.81 6.63L98 9.24l5.46 4.73L101.82 21z"/>
+          <path fill="#fff" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+          <path fill="#fff" d="M36 17.27L42.18 21l-1.64-7.03L46 9.24l-7.19-.61L36 2l-2.81 6.63L26 9.24l5.46 4.73L29.82 21z"/>
+          <path fill="#fff" d="M60 17.27L66.18 21l-1.64-7.03L70 9.24l-7.19-.61L60 2l-2.81 6.63L50 9.24l5.46 4.73L53.82 21z"/>
+          <path fill="#fff" d="M84 17.27L90.18 21l-1.64-7.03L94 9.24l-7.19-.61L84 2l-2.81 6.63L74 9.24l5.46 4.73L77.82 21z"/>
+          <path fill="#fff" d="M108 17.27L114.18 21l-1.64-7.03L118 9.24l-7.19-.61L108 2l-2.81 6.63L98 9.24l5.46 4.73L101.82 21z"/>
           <path d="M0 0h120v24H0z" fill="none"/>
         </svg>
         <p>{testimonies[index].text}</p>
