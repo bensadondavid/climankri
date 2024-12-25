@@ -18,15 +18,8 @@ app.post('/contact', async (req, res) => {
 
     try {
         console.log('Préparation de l\'envoi de l\'email...');
-        const transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 587,
-            secure: false,
-            auth: {
-                user: process.env.GMAIL_EMAIL,
-                pass: process.env.GMAIL_PASSWORD
-            }
-        });
+        console.log('GMAIL_EMAIL:', process.env.GMAIL_EMAIL);
+        console.log('GMAIL_PASSWORD:', process.env.GMAIL_PASSWORD ? 'OK' : 'MISSING');
 
         await transporter.sendMail({
             from: process.env.GMAIL_EMAIL,
@@ -39,7 +32,7 @@ app.post('/contact', async (req, res) => {
         console.log('Email envoyé avec succès');
         res.status(200).send('Email envoyé avec succès.');
     } catch (error) {
-        console.error('Erreur Nodemailer :', error.message);
+        console.error('Erreur lors de l\'envoi de l\'email :', error.message);
         res.status(500).send('Erreur serveur.');
     }
 });
