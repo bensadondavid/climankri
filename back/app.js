@@ -4,10 +4,7 @@ const cors = require('cors')
 const nodemailer = require('nodemailer')
 const port = process.env.PORT || 4000;
 
-app.use(cors({
-    origin: 'https://climankri.com', // Autorise uniquement votre frontend
-    methods: ['POST'], // Autorise uniquement les requêtes POST
-}));
+app.use(cors());
 app.use(express.json())
 
 app.post('/contact', async (req, res)=>{
