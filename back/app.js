@@ -1,29 +1,34 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const port = 4000
+const nodemailer = require('nodemailer')
+const port = process.env.PORT || 4000;
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://climankri.com', // Autorise uniquement votre frontend
+    methods: ['POST'], // Autorise uniquement les requêtes POST
+}));
 app.use(express.json())
 
 app.post('/contact', async (req, res)=>{
-    const { prenom, nom, email, phone, message } = req.body;
+    const { prenom, nom, email, phone, commentaire } = req.body;
 
     const transporter = nodemailer.createTransport({
-        host: 'smtp.office365.com', // Serveur SMTP d'Outlook
+        host: 'smtp.gmail.com', // Serveur SMTP d'Outlook
         port: 587, // Port sécurisé pour TLS
         secure: false, // `false` pour TLS
         auth: {
-            user: process.env.OUTLOOK_EMAIL, // Variable d'environnement
-            pass: process.env.OUTLOOK_PASSWORD // Variable d'environnement
+            user: process.env.GMAIL_EMAIL, // Variable d'environnement
+            pass: process.env.GMAIL_PASSWORD // Variable d'environnement
         }
     });
 
     const mailOptions = {
-        from: email, // Adresse de l'utilisateur (optionnel)
+        from: process.env.GMAIL_EMAIL , // Adresse de l'utilisateur (optionnel)
+        replyTo : email,
         to: 'contact@climankri.com', // Adresse Gmail de destination
         subject: `Nouveau message de ${prenom} ${nom} ${phone}`,
-        text: message
+        text: commentaire
     };
 
     try {

@@ -21,7 +21,7 @@ function Contact(){
         e.preventDefault()
 
         try{
-            const response = await fetch('https://localhost:5173/contact',{
+            const response = await fetch('https://climankri-back.onrender.com/contact',{
                 method : 'POST',
                 headers : {'Content-type' : 'application/json'},
                 body : JSON.stringify(formData)
