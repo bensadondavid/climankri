@@ -7,34 +7,40 @@ const port = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json())
 
-app.post('/contact', async (req, res)=>{
+app.post('/contact', async (req, res) => {
+    console.log('Requête reçue :', req.body);
+
     const { prenom, nom, email, phone, commentaire } = req.body;
-
-    const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com', // Serveur SMTP d'Outlook
-        port: 587, // Port sécurisé pour TLS
-        secure: false, // `false` pour TLS
-        auth: {
-            user: process.env.GMAIL_EMAIL, // Variable d'environnement
-            pass: process.env.GMAIL_PASSWORD // Variable d'environnement
-        }
-    });
-
-    const mailOptions = {
-        from: process.env.GMAIL_EMAIL , // Adresse de l'utilisateur (optionnel)
-        replyTo : email,
-        to: 'contact@climankri.com', // Adresse Gmail de destination
-        subject: `Nouveau message de ${prenom} ${nom} ${phone}`,
-        text: commentaire
-    };
+    if (!prenom || !nom || !email || !phone || !commentaire) {
+        console.error('Champs manquants');
+        return res.status(400).send('Tous les champs sont requis.');
+    }
 
     try {
-        // Envoyer l'email
-        await transporter.sendMail(mailOptions);
+        console.log('Préparation de l\'envoi de l\'email...');
+        const transporter = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 587,
+            secure: false,
+            auth: {
+                user: process.env.GMAIL_EMAIL,
+                pass: process.env.GMAIL_PASSWORD
+            }
+        });
+
+        await transporter.sendMail({
+            from: process.env.GMAIL_EMAIL,
+            replyTo: email,
+            to: 'contact@climankri.com',
+            subject: `Nouveau message de ${prenom} ${nom} (${phone})`,
+            text: commentaire
+        });
+
+        console.log('Email envoyé avec succès');
         res.status(200).send('Email envoyé avec succès.');
     } catch (error) {
-        console.error('Erreur lors de l\'envoi de l\'email :', error);
-        res.status(500).send('Une erreur est survenue lors de l\'envoi de l\'email.');
+        console.error('Erreur Nodemailer :', error.message);
+        res.status(500).send('Erreur serveur.');
     }
 });
 
