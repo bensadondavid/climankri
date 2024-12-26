@@ -32,8 +32,8 @@ function Contact(){
             }
             else{
                 const data = await response.json()
-                console.log(data);
-                alert('Envoyé')
+                console.log(data.message);
+                alert(data.message)
             }
         }
         catch(error){
