@@ -34,6 +34,13 @@ function Contact(){
                 const data = await response.json()
                 console.log(data.message);
                 alert(data.message)
+                setFormdata({
+                    prenom : '',
+                    nom : '', 
+                    email : '',
+                    phone : '',
+                    commentaire : ''
+                })
             }
         }
         catch(error){
