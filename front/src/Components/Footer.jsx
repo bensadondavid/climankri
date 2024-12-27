@@ -26,7 +26,8 @@ function Footer (){
                     <Map />
                 </div>
                 <div className="contact-footer">
-                    <p>Tel : 06 14 77 96 66</p>
+                    <p>Tel : 01 88 81 21 97</p>
+                    <p>E-mail : contact@climankri.com</p>
                 </div>
         </footer>
         </>

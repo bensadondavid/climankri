@@ -4,6 +4,12 @@ import '../chauffage.css';
 import Contact from '../Components/Contact'
 
 function Chauffage() {
+
+  const handleScrollToContact = () => {
+    const contact = document.getElementById('contact')
+    contact.scrollIntoView({behavior : 'smooth'})
+  }
+
   return (
     <>
       <Header />
@@ -24,7 +30,7 @@ function Chauffage() {
             <li>Installation de PAC Air-Air et PAC Air-Eau pour une efficacité énergétique maximale.</li>
           </ul>
           <img src="/img-chauffage-installation.jpg" alt="Installation de chauffage" />
-          <button>Demandez un devis</button>
+          <button onClick={handleScrollToContact}>Demandez un devis</button>
         </section>
 
         {/* Section Maintenance Annuelle */}
@@ -57,7 +63,7 @@ function Chauffage() {
             <li>Assistance pour les thermostats connectés associés aux PAC.</li>
           </ul>
           <img src="/img-chauffage-reparation.jpg" alt="Assistance et réparation de chauffage" />
-          <button>Contactez-nous</button>
+          <button onClick={handleScrollToContact}>Contactez-nous</button>
         </section>
 
         {/* Section Aide d'Urgence */}
@@ -73,7 +79,8 @@ function Chauffage() {
             <li>Service disponible même les week-ends et jours fériés.</li>
           </ul>
           <img src="/img-chauffage-urgence.jpg" alt="Service d'urgence chauffage" />
-          <button className="btn-urgence">Appelez-nous maintenant</button>
+          <a href="tel:0188812197" className="appel" >Appelez-nous maintenant</a>
+
         </section>
       </div>
       <Contact />

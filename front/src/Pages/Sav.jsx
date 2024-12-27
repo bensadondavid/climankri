@@ -4,6 +4,12 @@ import '../sav.css';
 import Contact from '../Components/Contact'
 
 function Sav() {
+
+  const handleScrollToContact = () => {
+    const contact = document.getElementById('contact')
+    contact.scrollIntoView({behavior : 'smooth'})
+};
+
   return (
     <>
       <Header />
@@ -23,7 +29,7 @@ function Sav() {
             <li>Service de maintenance pour prolonger la durée de vie de vos installations.</li>
           </ul>
           <img src="/img-sav-global.jpg" alt="Service après-vente CLIMANKRI" />
-          <button>Contactez le SAV</button>
+          <button onClick={handleScrollToContact}>Contactez le SAV</button>
         </section>
 
         {/* Section Réparation et Remplacement */}
@@ -56,7 +62,7 @@ function Sav() {
             <li>Assistance rapide pour résoudre vos problèmes ou répondre à vos questions.</li>
           </ul>
           <img src="/img-sav-garantie.png" alt="Garantie et assistance CLIMANKRI" />
-          <button>Appelez le SAV</button>
+          <a href="tel:0188812197" className="appel" >Appelez-nous maintenant</a>
         </section>
 
       </div>

@@ -4,6 +4,12 @@ import '../plomberie.css';
 import Contact from '../Components/Contact'
 
 function Plomberie() {
+
+  const handleScrollToContact = () => {
+    const contact = document.getElementById('contact')
+    contact.scrollIntoView({behavior : 'smooth'})
+};
+
   return (
     <>
       <Header />
@@ -23,7 +29,7 @@ function Plomberie() {
             <li>Rénovation de cuisines avec raccordement des électroménagers.</li>
           </ul>
           <img src="/img-plomberie-renovation.webp" alt="Rénovation plomberie" />
-          <button>Obtenir un devis</button>
+          <button onClick={handleScrollToContact}>Obtenir un devis</button>
         </section>
 
         {/* Section Dépannage */}
@@ -58,7 +64,7 @@ function Plomberie() {
             <li>Coupures imprévues d’eau.</li>
           </ul>
           <img src="/img-plomberie-urgence.webp" alt="Service d'urgence plomberie" />
-          <button>Appelez-nous maintenant</button>
+          <a href="tel:0188812197" className="appel" >Appelez-nous maintenant</a>
         </section>
 
       </div>

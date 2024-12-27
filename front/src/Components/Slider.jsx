@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import React Router Link
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -13,11 +14,25 @@ const ImageSlider = () => {
     autoplaySpeed: 3000,
   };
 
-  // Chaque objet inclut une image et un texte de bouton associé
   const slides = [
-    { image: "/clim.webp", btn: "POMPES A CHALEUR", txt: "REDUISEZ DES MAINTENANT VOS FACTURES D'ENERGIE" },
-    { image: "/panneaux.jpg", btn: "PANNEAUX PHOTOVOLTAIQUES", txt: "PASSEZ AUX ENERGIES VERTES" },
-    { image: "/pac.jpg", btn: "POMPES A CHALEUR", txt: "UN PROJET DE RENOVATION ? RENCONTRONS NOUS !"},
+    {
+      image: "/clim.webp",
+      btn: "DEMANDEZ UN DEVIS",
+      txt: "REDUISEZ DES MAINTENANT VOS FACTURES D'ENERGIE",
+      lien: "/#contact" // Formulaire de contact
+    },
+    {
+      image: "/panneaux.jpg",
+      btn: "NOS SOLUTIONS",
+      txt: "UN PROJET DE RENOVATION ? RENCONTRONS NOUS !",
+      lien: "/plomberie#renovation" // Plomberie > Rénovation
+    },
+    {
+      image: "/pac.jpg",
+      btn: "POMPES A CHALEUR",
+      txt: "PASSEZ AUX ENERGIES VERTES",
+      lien: "/chauffage#installation" // Chauffage > Installation Moderne
+    },
   ];
 
   return (
@@ -26,10 +41,12 @@ const ImageSlider = () => {
         {slides.map((slide, index) => (
           <div key={index} className="slider-container">
             <img src={slide.image} alt={`Slide ${index + 1}`} className="slider-image" />
-              <div className="slider-content">
-                  <p className="slider-text"> {slide.txt} </p>
-                  <button className="slider-button">{slide.btn}</button>
-              </div>
+            <div className="slider-content">
+              <p className="slider-text"> {slide.txt} </p>
+              <Link to={slide.lien}>
+                <button className="slider-button">{slide.btn}</button>
+              </Link>
+            </div>
           </div>
         ))}
       </Slider>

@@ -615,8 +615,10 @@ footer{
 
 .contact-footer{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 @media (max-width : 1000px) {
@@ -635,7 +637,7 @@ footer{
 }
 
 .plomberie-page button,
-.chauffage-page button, .clim-page button,
+.chauffage-page button, .climatisation-page button,
 .sav-page button{
   padding: 20px;
   background-color: #03295c;
@@ -646,7 +648,23 @@ footer{
 }
 
 .plomberie-page button:hover,
-.chauffage-page button:hover, .clim-page button:hover,
+.chauffage-page button:hover, .climatisation-page button:hover,
 .sav-page button:hover{
   opacity: 80%;
+}
+
+.appel {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #d9534f; /* Sans guillemets */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.appel:hover {
+  background-color: #c9302c; /* Ajouter un effet au survol */
 }

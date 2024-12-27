@@ -4,6 +4,12 @@ import '../clim.css'
 import Contact from '../Components/Contact'
 
 function Climatisation() {
+
+    const handleScrollToContact = () => {
+    const contact = document.getElementById('contact')
+    contact.scrollIntoView({behavior : 'smooth'})
+    }
+
   return (
     <>
       <Header />
@@ -23,7 +29,7 @@ function Climatisation() {
             <li>Climatisation réversible pour un confort été comme hiver.</li>
           </ul>
           <img src="/img-clim-systeme.jpg" alt="Systèmes sur mesure climatisation" />
-          <button>Demandez un devis</button>
+          <button onClick={handleScrollToContact}>Demandez un devis</button>
         </section>
 
         {/* Section Nettoyage & Contrôle */}
@@ -56,7 +62,7 @@ function Climatisation() {
             <li>Diagnostic précis pour éviter les futures pannes.</li>
           </ul>
           <img src="/img-clim-diagnostic.jpg" alt="Diagnostic et réparation climatisation" />
-          <button>Contactez-nous</button>
+          <button onClick={handleScrollToContact}>Contactez-nous</button>
         </section>
 
       </div>
