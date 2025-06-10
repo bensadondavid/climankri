@@ -63,7 +63,7 @@ nav{
   font-weight: bold;
 }
 
-@media (max-width : 1200px) {
+@media (max-width : 1445px) {
   .links a{
     font-size: large;
   }
@@ -140,7 +140,7 @@ nav .contact-btn:hover{
 
 /* Header telephone */
 
-@media (max-width : 1000px) {
+@media (max-width : 1240px) {
 
   .entete{
     position: fixed;

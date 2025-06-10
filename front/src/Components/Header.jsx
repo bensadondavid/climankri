@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
 import Menu from "./Menu";
 
@@ -48,7 +48,7 @@ function Header() {
 
     return (
         <>
-            {screenWidth > 1000 ? 
+            {screenWidth > 1240 ? 
             <div className="entete">
                 <p>Au service de votre habitat </p>
                 <header>
@@ -83,6 +83,7 @@ function Header() {
                                     </div>
                                 </Link>
                             </div>
+                            <Link to='/panneaux' className="sav" onClick={handleScrollToTop}>PANNEAUX PHOTOVOLTAIQUES</Link>
                             <Link to='/sav' className="sav" onClick={handleScrollToTop}>SAV</Link>
                             <button className='contact-btn' onClick={handleScrollToContact}>CONTACT</button>
                         </div>
